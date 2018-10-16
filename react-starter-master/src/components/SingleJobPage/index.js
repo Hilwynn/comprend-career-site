@@ -45,13 +45,15 @@ class SingleJob extends React.Component {
             })
           }
         })
-        const nextJobIndex = this.state.jobIndex + 1
-        const nextJobId = this.state.jobList[nextJobIndex].id
+        const { jobIndex, jobList } = this.state
+        console.log("jobList", jobList)
+        console.log("jobIndex", jobIndex)
+
+        const nextJobId = jobList[jobIndex + 1].id
         this.setState({
           nextJob: nextJobId
         })
-        const previousJobIndex = this.state.jobIndex - 1
-        const previousJobId = this.state.jobList[previousJobIndex].id
+        const previousJobId = jobList[jobIndex - 1].id
         this.setState({
           previousJob: previousJobId
         })
