@@ -13,7 +13,7 @@ class LandingPage extends React.Component {
 
   componentDidMount() {
     // Get Jobs from jobs-API
-    const JobsUrl = "http://hellotechnigo.comprendwebsites.net/api/jobs"
+    const JobsUrl = "https://hellotechnigo.comprendwebsites.net/api/jobs"
 
     fetch(JobsUrl)
       .then(response => {

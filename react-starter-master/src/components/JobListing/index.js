@@ -11,7 +11,7 @@ class JobListing extends React.Component {
   componentDidMount() {
     window.scrollTo(0, 0)
     
-    const url = "http://hellotechnigo.comprendwebsites.net/api/jobs"
+    const url = "https://hellotechnigo.comprendwebsites.net/api/jobs"
 
     fetch(url)
       .then(response => {
