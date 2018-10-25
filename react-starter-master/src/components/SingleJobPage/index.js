@@ -154,7 +154,7 @@ class SingleJob extends React.Component {
               <Link to={`/jobs/${previousJob}`} onClick={this.getJobInfo}>&#8592; Previous Post</Link>
             </div>
             <div className="single-job-navigation-item">
-              <a href="#">Back to List</a>
+              <Link to="/jobs">Back to List</Link>
             </div>
             <div className="single-job-navigation-item right-text">
               <Link to={`/jobs/${nextJob}`} onClick={this.getJobInfo}>Next Post &#8594;</Link>
