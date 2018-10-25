@@ -27,7 +27,7 @@ class LandingPage extends React.Component {
       })
 
       // Get Emplyees from employee-API
-    const employeesUrl = "http://hellotechnigo.comprendwebsites.net/api/users"
+    const employeesUrl = "https://hellotechnigo.comprendwebsites.net/api/users"
     // Fetch code for EMPLOYEES
     fetch(employeesUrl)
       .then(response => {
