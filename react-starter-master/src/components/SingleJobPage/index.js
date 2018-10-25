@@ -65,7 +65,7 @@ class SingleJob extends React.Component {
       .then(response => response.json())
       .then(employees => {
         const removeInvalidNames = employee => (!(employee.name === "" || employee.name === null || employee.name.includes("@")))
-        const placeholder = "/assets/images/placeholder.png"
+        const placeholder = "./assets/images/placeholder.png"
 
         employees.forEach(employee => {
           if (employee.pictureUrl === "") {
