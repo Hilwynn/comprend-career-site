@@ -115,7 +115,7 @@ class SingleJob extends React.Component {
           <Link to="/jobs">&#8592; Back to List</Link>
           <h1>{title}</h1>
           <p className="preamble"><span>{city}. </span>{intro}</p>
-          <img src={`/assets/images/${id}.jpg`} alt="" />
+          <img src={`./assets/images/${id}.jpg`} alt="" />
           <div className="single-job-button-container">
             <button className="button-apply">Apply for the job</button>
             <button className="button-share">Share the job</button>
